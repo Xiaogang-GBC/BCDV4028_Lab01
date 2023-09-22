@@ -67,4 +67,10 @@ contract StudentRegistration {
             studentArray.push(_stu[i]);
         }
     }
+
+    // this function is only for better readability of the array to observe the value change
+    // the default getter requires index and only show one each time
+    function getStudentArray() public view returns (uint[] memory){
+        return studentArray;
+    }
 }
